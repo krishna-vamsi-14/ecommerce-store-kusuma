@@ -4,7 +4,7 @@ export const AllProducts = () => {
   return (
     <div className="pt-8 md:pt-24 pb-16 max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-center">All Products</h1>
-      <p className="text-gray-500 mt-2 text-center">
+      <p className="text-gray-500 mt-2 text-center px-6 md:px-0">
         Discover our newest collection of handcrafted jewelry pieces
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 px-6 md:px-0">
