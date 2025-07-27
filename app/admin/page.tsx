@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 
 import "../globals.css";
+import { AdminDashboardCard } from "./_components/AdminDashBoardCard/AdminDashBoardCard";
 
 export default function AdminPage() {
   return (
@@ -31,27 +32,3 @@ export default function AdminPage() {
     </div>
   );
 }
-
-export type AdminDashboardCardProps = {
-  title: string;
-  description: string;
-  value: number;
-};
-
-export const AdminDashboardCard = ({
-  title,
-  description,
-  value,
-}: AdminDashboardCardProps) => {
-  return (
-    <Card className="w-full border-gray-200">
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p className="text-2xl font-bold">{value}</p>
-      </CardContent>
-    </Card>
-  );
-};
